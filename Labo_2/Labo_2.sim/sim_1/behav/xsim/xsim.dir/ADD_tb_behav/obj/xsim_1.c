@@ -54,20 +54,21 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
+IKI_DLLESPEC extern void execute_37(char*, char *);
+IKI_DLLESPEC extern void execute_14(char*, char *);
 IKI_DLLESPEC extern void execute_36(char*, char *);
-IKI_DLLESPEC extern void execute_35(char*, char *);
-IKI_DLLESPEC extern void execute_16(char*, char *);
 IKI_DLLESPEC extern void execute_17(char*, char *);
 IKI_DLLESPEC extern void execute_18(char*, char *);
+IKI_DLLESPEC extern void execute_19(char*, char *);
 IKI_DLLESPEC extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[6] = {(funcp)execute_36, (funcp)execute_35, (funcp)execute_16, (funcp)execute_17, (funcp)execute_18, (funcp)vhdl_transfunc_eventcallback};
-const int NumRelocateId= 6;
+funcp funcTab[7] = {(funcp)execute_37, (funcp)execute_14, (funcp)execute_36, (funcp)execute_17, (funcp)execute_18, (funcp)execute_19, (funcp)vhdl_transfunc_eventcallback};
+const int NumRelocateId= 7;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/ADD_tb_behav/xsim.reloc",  (void **)funcTab, 6);
-	iki_vhdl_file_variable_register(dp + 4512);
-	iki_vhdl_file_variable_register(dp + 4568);
+	iki_relocate(dp, "xsim.dir/ADD_tb_behav/xsim.reloc",  (void **)funcTab, 7);
+	iki_vhdl_file_variable_register(dp + 4560);
+	iki_vhdl_file_variable_register(dp + 4616);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */

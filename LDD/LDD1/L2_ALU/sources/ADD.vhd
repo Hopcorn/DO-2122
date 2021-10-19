@@ -43,10 +43,13 @@ architecture LDD1 of ADD is
     end component;
     
 begin
+    --First carry is fromoutside, rest can be initiated in for-loop
+    c_i(0) <= carry_in;
+    
 	-- TODO: complete architecture description
     G_1: for i in 0 to C_DATA_WIDTH-1 generate
             Ripple_Adder:
                 FA1B port map(a(i),b(i),c_i(i), result(i), c_i(i + 1)); 
          end generate;
-    
+    carry_out <= c_i(C_DATA_WIDTH);
 end LDD1;

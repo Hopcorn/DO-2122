@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Oct 19 13:20:42 2021
+# Process ID: 12918
+# Current directory: /home/student/DO-2122
+# Command line: vivado
+# Log file: /home/student/DO-2122/vivado.log
+# Journal file: /home/student/DO-2122/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/student/DO-2122/Labo_2/Labo_2.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+source ALU8bit.tcl
+close_sim
+set_property top ADD_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source ADD_tb.tcl
+close_sim
+launch_simulation
+source ADD_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU_tb.vhd
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+set_property top ALU_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+save_wave_config {/home/student/DO-2122/Labo_2/Waveform-ALU.wcfg}
+add_files -fileset sim_1 -norecurse /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg
+set_property xsim.view /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg [get_filesets sim_1]

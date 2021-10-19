@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ALU_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ALU_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999,995 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,000,001 ps"></ZoomEndTime>
+      <Cursor1Time time="1,000,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject type="array" fp_name="/ALU_tb/X">
+      <obj_property name="ElementShortName">X[7:0]</obj_property>
+      <obj_property name="ObjectShortName">X[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/Y">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/op">
+      <obj_property name="ElementShortName">op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/Z">
+      <obj_property name="ElementShortName">Z[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Z[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ALU_tb/zf">
+      <obj_property name="ElementShortName">zf</obj_property>
+      <obj_property name="ObjectShortName">zf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ALU_tb/cf">
+      <obj_property name="ElementShortName">cf</obj_property>
+      <obj_property name="ObjectShortName">cf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ALU_tb/ef">
+      <obj_property name="ElementShortName">ef</obj_property>
+      <obj_property name="ObjectShortName">ef</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ALU_tb/gf">
+      <obj_property name="ElementShortName">gf</obj_property>
+      <obj_property name="ObjectShortName">gf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ALU_tb/sf">
+      <obj_property name="ElementShortName">sf</obj_property>
+      <obj_property name="ObjectShortName">sf</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ALU_tb/debug">
+      <obj_property name="ElementShortName">debug</obj_property>
+      <obj_property name="ObjectShortName">debug</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ALU_tb/C_DATA_WIDTH">
+      <obj_property name="ElementShortName">C_DATA_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">C_DATA_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_NOT">
+      <obj_property name="ElementShortName">ALU_OP_NOT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_NOT[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_AND">
+      <obj_property name="ElementShortName">ALU_OP_AND[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_AND[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_OR">
+      <obj_property name="ElementShortName">ALU_OP_OR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_OR[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_XOR">
+      <obj_property name="ElementShortName">ALU_OP_XOR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_XOR[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_ADD">
+      <obj_property name="ElementShortName">ALU_OP_ADD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_ADD[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_SUB">
+      <obj_property name="ElementShortName">ALU_OP_SUB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_SUB[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_CMP">
+      <obj_property name="ElementShortName">ALU_OP_CMP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_CMP[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_RR">
+      <obj_property name="ElementShortName">ALU_OP_RR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_RR[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_RL">
+      <obj_property name="ElementShortName">ALU_OP_RL[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_RL[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ALU_tb/ALU_OP_SWAP">
+      <obj_property name="ElementShortName">ALU_OP_SWAP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP_SWAP[3:0]</obj_property>
+   </wvobject>
+</wave_config>

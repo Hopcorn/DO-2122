@@ -2,7 +2,8 @@
 2020.2
 Jun 10 2021
 19:45:28
-/home/student/LDD/LDD1/L2_ALU/sources/ADD.vhd,1634637697,vhdl,,,,add,,,,,,,,
-/home/student/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd,1634639981,vhdl,,,,alu8bit,,,,,,,,
-/home/student/LDD/LDD1/L2_ALU/sources/FA1B.vhd,1634637141,vhdl,,,,fa1b,,,,,,,,
-/home/student/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd,1634636112,vhdl,,,,alu_tb,,,,,,,,
+/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd,1634645680,vhdl,,,,add,,,,,,,,
+/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd,1634646349,vhdl,,,,alu8bit,,,,,,,,
+/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd,1634642209,vhdl,,,,fa1b,,,,,,,,
+/home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd,1634642209,vhdl,,,,add_tb,,,,,,,,
+/home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd,1634642209,vhdl,,,,alu_tb,,,,,,,,

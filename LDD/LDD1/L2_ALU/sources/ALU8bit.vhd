@@ -114,7 +114,7 @@ begin
     -- TODO: change the adder's secondary input and carry in, based on the operation (addition/subtraction)
     -- addition and subtraction
     add_secondary_input_i <= Y when (op="0101") else not Y;
-    add_carry_in_i <= '0' when (op="0101") else '1';
+    add_carry_in_i <= '1' when (op="0110") else '0';
     
     -- TODO: set 'result_i' to a specific operation result based on the selected operation 'op'
     -- result mux:
@@ -123,10 +123,11 @@ begin
                     and_result_i  when "0010",
                     or_result_i   when "0011",
                     xor_result_i  when "0100",
-                    rr_result_i   when "0101",
-                    rl_result_i   when "0110",
-                    add_result_i  when "0111",
-                    swap_result_i when "1000",
+                    add_result_i  when "0101",
+                    add_result_i  when "0110",
+                    rr_result_i   when "1000",
+                    rl_result_i   when "1001",
+                    swap_result_i when "1010",
                     "00000000" when others;
 
     Z <= result_i;                    
@@ -138,10 +139,17 @@ begin
     rl_carry_i <= X(7);
     rr_carry_i <= X(0);
     
-    cf <= '1' when rl_carry_i = '1' or rr_carry_i = '1' or add_carry_i = '1' else '0';
+    with op select
+        cf <= rr_carry_i when "1000",
+              rl_carry_i when "1001",
+              add_carry_i  when "0101",
+              not add_carry_i  when "0110",
+              '0' when others;
 
     -- zero flag
-    zf <= '1' when result_i = "0000000" else '0';
+    -- to easily check for an all zero signal we use te attribute range=>'0'
+    -- this gives us an all zero signal with the width of result_i (in this case C_DATA_WIDTH-1 to 0)
+    zf <= '1' when result_i = (result_i'range=>'0') else '0';
     
     -- equal, smaller, greater flag
     ef <= '1' when X = Y else '0';

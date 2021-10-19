@@ -9477,3 +9477,55 @@ selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 290, 402); // b
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // TclEventType: WAVEFORM_UPDATE_COMMANDS
 // TclEventType: WAVEFORM_MOVE_CURSOR
+// Elapsed time: 204 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // C
+// HMemoryUtils.trashcanNow. Engine heap size: 2,620 MB. GUI used memory: 153 MB. Current time: 10/19/21, 2:59:50 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // o - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // o
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cs): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU8bit 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,710 MB. GUI used memory: 152 MB. Current time: 10/19/21, 3:00:01 PM CEST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1388 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7856 ; free virtual = 12576 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU8bit' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:38] 
+// Tcl Message: 	Parameter C_DATA_WIDTH bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ADD' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:15' bound to instance 'ADDER' of component 'ADD' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:102] INFO: [Synth 8-638] synthesizing module 'ADD' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:28] 
+// Tcl Message: 	Parameter C_DATA_WIDTH bound to: 8 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7888 ; free virtual = 12614 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7883 ; free virtual = 12610 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7883 ; free virtual = 12610 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7876 ; free virtual = 12603 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8147.297 ; gain = 0.000 ; free physical = 7799 ; free virtual = 12538 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 8233.949 ; gain = 125.625 ; free physical = 7726 ; free virtual = 12470 
+// Tcl Message: 18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 8233.949 ; gain = 125.625 ; free physical = 7726 ; free virtual = 12470 
+// 'dU' command handler elapsed time: 10 seconds
+dismissDialog("Open Elaborated Design"); // bz
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // E
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV

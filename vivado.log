@@ -1847,3 +1847,56 @@ Note: SIMULATION ENDED
 Time: 66 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'ADD_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: ALU8bit
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7856 ; free virtual = 12576
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU8bit' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:38]
+	Parameter C_DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ADD' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:15' bound to instance 'ADDER' of component 'ADD' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'ADD' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:28]
+	Parameter C_DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'FA1B' (1#1) [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:27]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'ADD' (2#1) [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ALU8bit' (3#1) [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7888 ; free virtual = 12614
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7883 ; free virtual = 12610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7883 ; free virtual = 12610
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7876 ; free virtual = 12603
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8147.297 ; gain = 0.000 ; free physical = 7799 ; free virtual = 12538
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 8233.949 ; gain = 125.625 ; free physical = 7726 ; free virtual = 12470
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 8233.949 ; gain = 125.625 ; free physical = 7726 ; free virtual = 12470

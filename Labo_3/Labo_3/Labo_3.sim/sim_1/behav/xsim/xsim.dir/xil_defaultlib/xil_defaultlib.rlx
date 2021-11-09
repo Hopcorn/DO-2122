@@ -5,4 +5,6 @@ Jun 10 2021
 /home/student/DO-2122/Labo_3/Labo_3/Labo_3.srcs/sim_1/imports/sources/basic_register.vhd,1636455455,vhdl,,,,basic_register,,,,,,,,
 /home/student/DO-2122/Labo_3/Labo_3/Labo_3.srcs/sim_1/imports/sources/basic_register_tb.vhd,1636453262,vhdl,,,,basic_register_tb,,,,,,,,
 /home/student/DO-2122/Labo_3/Labo_3/Labo_3.srcs/sim_1/imports/sources/program_counter_tb.vhd,1636453262,vhdl,,,,program_counter_tb,,,,,,,,
-/home/student/DO-2122/Labo_3/Labo_3/Labo_3.srcs/sources_1/imports/sources/program_counter.vhd,1636456557,vhdl,,,,program_counter,,,,,,,,
+/home/student/DO-2122/Labo_3/Labo_3/Labo_3.srcs/sim_1/imports/sources/updown_counter_tb.vhd,1636453262,vhdl,,,,updown_counter_tb,,,,,,,,
+/home/student/DO-2122/Labo_3/Labo_3/Labo_3.srcs/sources_1/imports/sources/program_counter.vhd,1636463969,vhdl,,,,program_counter,,,,,,,,
+/home/student/DO-2122/Labo_3/Labo_3/Labo_3.srcs/sources_1/imports/sources/updown_counter.vhd,1636463335,vhdl,,,,updown_counter,,,,,,,,

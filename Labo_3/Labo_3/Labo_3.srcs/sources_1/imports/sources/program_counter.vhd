@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Institution: KU Leuven
--- Students: firstname lastname and other guy/girl/...
+-- Students: Hannes Hugaert
 -- 
 -- Module Name: program_counter - Behavioral
 -- Course Name: Lab Digital Design
@@ -44,7 +44,7 @@ end program_counter;
 architecture Behavioral of program_counter is
     -- TODO: (optionally) declare signals
     signal output: std_logic_vector(C_PC_WIDTH-1 downto 0):=(others => '0');
-    signal step: std_logic_vector(to_unsigned(C_PC_STEP, output'length));
+    signal step: std_logic_vector(output'range) := std_logic_vector(to_unsigned(C_PC_STEP, output'length));
 begin
     Reg_Proc: process(clk, reset) is
     begin
@@ -52,13 +52,11 @@ begin
             output <= (output'range=>'0');
         elsif rising_edge(clk) then
             if(up = '1') then
-                output <= pc_in + step; 
-            else
-                if(le = '1') then 
+                output <= output + step; 
+            elsif (le = '1') then 
                 output <= pc_in;
-                else 
+            else 
                 output <= output;
-                end if;
             end if;
         end if;
     end process;

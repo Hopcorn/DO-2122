@@ -1,0 +1,1902 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Oct 19 13:20:42 2021
+# Process ID: 12918
+# Current directory: /home/student/DO-2122
+# Command line: vivado
+# Log file: /home/student/DO-2122/vivado.log
+# Journal file: /home/student/DO-2122/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/opt/Xilinx/Vivado/2021.1/scripts/Vivado_init.tcl'
+start_gui
+open_project /home/student/DO-2122/Labo_2/Labo_2.xpr
+WARNING: [Board 49-91] Board repository path '<extracted path>/vivado-boards/new/board_files' does not exist, it will not be used to search board files.
+INFO: [Project 1-313] Project file moved from '/home/student/Labo_2' since last save.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory '/home/student/DO-2122/Labo2/DO-2122/<extracted path>/vivado-boards/new/board_files', nor could it be found using path '/home/student/Labo2/DO-2122/<extracted path>/vivado-boards/new/board_files'.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory '/home/student/DO-2122/Labo_2/Labo_2.gen/sources_1', nor could it be found using path '/home/student/Labo_2/Labo_2.gen/sources_1'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd', nor could it be found using path '/home/student/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+import_files -fileset sim_1 -norecurse /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU8bit'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU8bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU8bit_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU8bit_behav xil_defaultlib.ALU8bit -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU8bit_behav xil_defaultlib.ALU8bit -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.alu8bit
+Built simulation snapshot ALU8bit_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim/xsim.dir/ALU8bit_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim/xsim.dir/ALU8bit_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 19 13:23:29 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 19 13:23:29 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7631.594 ; gain = 0.000 ; free physical = 9595 ; free virtual = 14187
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU8bit_behav -key {Behavioral:sim_1:Functional:ALU8bit} -tclbatch {ALU8bit.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU8bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU8bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 7692.418 ; gain = 60.824 ; free physical = 9525 ; free virtual = 14118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7704.426 ; gain = 5.004 ; free physical = 9574 ; free virtual = 14166
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top ADD_tb [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ADD_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ADD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ADD_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD_tb'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [add_default]
+Compiling architecture behavioral of entity xil_defaultlib.add_tb
+Built simulation snapshot ADD_tb_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim/xsim.dir/ADD_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim/xsim.dir/ADD_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 19 13:24:16 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 19 13:24:16 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7704.426 ; gain = 0.000 ; free physical = 9501 ; free virtual = 14093
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ADD_tb_behav -key {Behavioral:sim_1:Functional:ADD_tb} -tclbatch {ADD_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ADD_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: ADD without carry failed (carry_out)
+Time: 11 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+Error: ADD+carry_in without carry failed (result)
+Time: 22 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+Error: ADD+carry_in without carry failed (carry_out)
+Time: 22 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+Error: ADD with carry failed (carry_out)
+Time: 34 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+Error: ADD+carry_in with carry failed (result)
+Time: 46 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+Error: ADD+carry_in with carry failed (carry_out)
+Time: 46 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+Note: SIMULATION ENDED
+Time: 66 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ADD_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7735.309 ; gain = 30.883 ; free physical = 9468 ; free virtual = 14061
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7742.312 ; gain = 5.004 ; free physical = 9165 ; free virtual = 13758
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ADD_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ADD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ADD_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [add_default]
+Compiling architecture behavioral of entity xil_defaultlib.add_tb
+Built simulation snapshot ADD_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ADD_tb_behav -key {Behavioral:sim_1:Functional:ADD_tb} -tclbatch {ADD_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ADD_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: ADD without carry.
+Error: ADD+carry_in without carry failed (result)
+Time: 22 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+SUCCESS: ADD with carry.
+Error: ADD+carry_in with carry failed (result)
+Time: 46 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+Error: ADD+carry_in with carry failed (carry_out)
+Time: 46 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+Note: SIMULATION ENDED
+Time: 66 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ADD_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+import_files -fileset sim_1 -norecurse /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU_tb.vhd
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ADD_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ADD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ADD_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log 
+Using 8 slave threads.
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top ALU_tb [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU_tb'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim/xsim.dir/ALU_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 19 13:31:30 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 19 13:31:30 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7809.355 ; gain = 0.000 ; free physical = 9037 ; free virtual = 13631
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (result)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (result)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (result)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (result)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+Error: RR with carry failed (result)
+Time: 143 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: RR without carry failed (result)
+Time: 154 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: RR without carry failed (cf)
+Time: 154 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: RL with carry failed (result)
+Time: 165 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: RL without carry failed (result)
+Time: 176 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: RL without carry failed (cf)
+Time: 176 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SWAP failed (result)
+Time: 187 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 7822.348 ; gain = 12.992 ; free physical = 9020 ; free virtual = 13614
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7822.348 ; gain = 0.000 ; free physical = 9034 ; free virtual = 13628
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (result)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (result)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+Error: RR without carry failed (cf)
+Time: 154 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: RL 1.
+Error: RL without carry failed (cf)
+Time: 176 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7846.355 ; gain = 24.008 ; free physical = 8970 ; free virtual = 13565
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:146]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (result)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (result)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+Error: RR without carry failed (cf)
+Time: 154 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: RL 1.
+Error: RL without carry failed (cf)
+Time: 176 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7850.363 ; gain = 4.008 ; free physical = 8911 ; free virtual = 13508
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:146]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (result)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (result)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+Error: RR without carry failed (cf)
+Time: 154 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: RL 1.
+Error: RL without carry failed (cf)
+Time: 176 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7866.379 ; gain = 0.000 ; free physical = 8908 ; free virtual = 13506
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:146]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+Error: RR without carry failed (cf)
+Time: 154 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: RL 1.
+Error: RL without carry failed (cf)
+Time: 176 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7933.410 ; gain = 58.840 ; free physical = 8899 ; free virtual = 13497
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:151]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (cf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7942.410 ; gain = 4.996 ; free physical = 8880 ; free virtual = 13480
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:151]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (cf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7958.426 ; gain = 0.000 ; free physical = 8807 ; free virtual = 13408
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:151]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (cf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7969.430 ; gain = 0.000 ; free physical = 8842 ; free virtual = 13443
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:151]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (cf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7975.430 ; gain = 0.000 ; free physical = 8723 ; free virtual = 13331
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:151]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (cf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7991.430 ; gain = 4.996 ; free physical = 8715 ; free virtual = 13323
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:151]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+Error: ADD without carry failed (cf)
+Time: 55 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD without carry 2 failed (cf)
+Time: 66 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (cf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB with carry failed (cf)
+Time: 88 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (cf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8022.449 ; gain = 4.996 ; free physical = 8773 ; free virtual = 13381
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 7 for 'std_logic_vector_93' array [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:150]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+SUCCESS: ADD 1.
+SUCCESS: ADD 2.
+Error: ADD with carry failed (zf)
+Time: 77 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: SUB 1.
+Error: SUB without carry failed (zf)
+Time: 99 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8038.465 ; gain = 0.000 ; free physical = 8698 ; free virtual = 13315
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+SUCCESS: ADD 1.
+SUCCESS: ADD 2.
+SUCCESS: ADD 3.
+SUCCESS: SUB 1.
+SUCCESS: SUB 2.
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 8054.465 ; gain = 4.996 ; free physical = 8569 ; free virtual = 13186
+save_wave_config {/home/student/DO-2122/Labo_2/Waveform-ALU.wcfg}
+add_files -fileset sim_1 -norecurse /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg
+set_property xsim.view /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg [get_filesets sim_1]
+current_wave_config {Waveform-ALU.wcfg}
+/home/student/DO-2122/Labo_2/Waveform-ALU.wcfg
+add_wave {{/ALU_tb/ALU_OP_RR}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ALU_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ALU_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -view {/home/student/DO-2122/Labo_2/Waveform-ALU.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: NOT.
+SUCCESS: AND.
+SUCCESS: OR.
+SUCCESS: XOR.
+SUCCESS: ADD 1.
+SUCCESS: ADD 2.
+SUCCESS: ADD 3.
+SUCCESS: SUB 1.
+SUCCESS: SUB 2.
+SUCCESS: CMP equal.
+SUCCESS: CMP smaller.
+SUCCESS: CMP greater.
+SUCCESS: RR 1.
+SUCCESS: RR 2.
+SUCCESS: RL 1.
+SUCCESS: RL 2.
+SUCCESS: SWAP.
+Note: SIMULATION ENDED
+Time: 207 ns  Iteration: 0  Process: /ALU_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ALU_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 8086.480 ; gain = 0.000 ; free physical = 8586 ; free virtual = 13208
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top ADD_tb [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ADD_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ADD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ADD_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [add_default]
+Compiling architecture behavioral of entity xil_defaultlib.add_tb
+Built simulation snapshot ADD_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ADD_tb_behav -key {Behavioral:sim_1:Functional:ADD_tb} -tclbatch {ADD_tb.tcl} -view {/home/student/DO-2122/Labo_2/Waveform-ALU.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg
+WARNING: Simulation object /ALU_tb/X was not found in the design.
+WARNING: Simulation object /ALU_tb/Y was not found in the design.
+WARNING: Simulation object /ALU_tb/op was not found in the design.
+WARNING: Simulation object /ALU_tb/Z was not found in the design.
+WARNING: Simulation object /ALU_tb/zf was not found in the design.
+WARNING: Simulation object /ALU_tb/cf was not found in the design.
+WARNING: Simulation object /ALU_tb/ef was not found in the design.
+WARNING: Simulation object /ALU_tb/gf was not found in the design.
+WARNING: Simulation object /ALU_tb/sf was not found in the design.
+WARNING: Simulation object /ALU_tb/debug was not found in the design.
+WARNING: Simulation object /ALU_tb/C_DATA_WIDTH was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_NOT was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_AND was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_OR was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_XOR was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_ADD was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_SUB was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_CMP was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_RR was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_RL was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_SWAP was not found in the design.
+source ADD_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: ADD without carry.
+SUCCESS: ADD+carry_in without carry.
+SUCCESS: ADD with carry.
+SUCCESS: ADD+carry_in with carry.
+Note: SIMULATION ENDED
+Time: 66 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ADD_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+update_compile_order -fileset sim_1
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ADD_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ADD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ADD_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ADD_tb_behav -key {Behavioral:sim_1:Functional:ADD_tb} -tclbatch {ADD_tb.tcl} -view {/home/student/DO-2122/Labo_2/Waveform-ALU.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg
+WARNING: Simulation object /ALU_tb/X was not found in the design.
+WARNING: Simulation object /ALU_tb/Y was not found in the design.
+WARNING: Simulation object /ALU_tb/op was not found in the design.
+WARNING: Simulation object /ALU_tb/Z was not found in the design.
+WARNING: Simulation object /ALU_tb/zf was not found in the design.
+WARNING: Simulation object /ALU_tb/cf was not found in the design.
+WARNING: Simulation object /ALU_tb/ef was not found in the design.
+WARNING: Simulation object /ALU_tb/gf was not found in the design.
+WARNING: Simulation object /ALU_tb/sf was not found in the design.
+WARNING: Simulation object /ALU_tb/debug was not found in the design.
+WARNING: Simulation object /ALU_tb/C_DATA_WIDTH was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_NOT was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_AND was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_OR was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_XOR was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_ADD was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_SUB was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_CMP was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_RR was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_RL was not found in the design.
+WARNING: Simulation object /ALU_tb/ALU_OP_SWAP was not found in the design.
+source ADD_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: ADD without carry.
+SUCCESS: ADD+carry_in without carry.
+SUCCESS: ADD with carry.
+SUCCESS: ADD+carry_in with carry.
+Note: SIMULATION ENDED
+Time: 66 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ADD_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+export_ip_user_files -of_objects  [get_files /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /home/student/DO-2122/Labo_2/Waveform-ALU.wcfg
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ADD_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ADD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj ADD_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 1a486072f32b42c59f45a5e5546be44c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_2/Labo_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ADD_tb_behav -key {Behavioral:sim_1:Functional:ADD_tb} -tclbatch {ADD_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ADD_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: ADD without carry.
+SUCCESS: ADD+carry_in without carry.
+SUCCESS: ADD with carry.
+SUCCESS: ADD+carry_in with carry.
+Note: SIMULATION ENDED
+Time: 66 ns  Iteration: 0  Process: /ADD_tb/STIM_PROC  File: /home/student/DO-2122/Labo_2/Labo_2.srcs/sim_1/imports/sources/ADD_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ADD_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: ALU8bit
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7856 ; free virtual = 12576
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU8bit' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:38]
+	Parameter C_DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ADD' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:15' bound to instance 'ADDER' of component 'ADD' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'ADD' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:28]
+	Parameter C_DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'FA1B' (1#1) [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:27]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-3491] module 'FA1B' declared at '/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd:16' bound to instance 'Ripple_Adder' of component 'FA1B' [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'ADD' (2#1) [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ALU8bit' (3#1) [/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7888 ; free virtual = 12614
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7883 ; free virtual = 12610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7883 ; free virtual = 12610
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8108.324 ; gain = 0.000 ; free physical = 7876 ; free virtual = 12603
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8147.297 ; gain = 0.000 ; free physical = 7799 ; free virtual = 12538
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 8233.949 ; gain = 125.625 ; free physical = 7726 ; free virtual = 12470
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 8233.949 ; gain = 125.625 ; free physical = 7726 ; free virtual = 12470

@@ -1,0 +1,28 @@
+Time resolution is 1 ps
+SUCCESS: cpu bus selection (dibr)
+SUCCESS: cpu bus selection (register 0)
+SUCCESS: cpu bus selection (pc)
+SUCCESS: cpu bus selection (register 2)
+SUCCESS: cpu bus selection (sp)
+SUCCESS: cpu bus selection (register 4)
+SUCCESS: cpu bus selection (ir_l)
+SUCCESS: cpu bus selection (register 6)
+SUCCESS: cpu bus selection (iv)
+SUCCESS: cpu bus selection (register 7)
+Error: cpu bus selection error (alu output) or alu operation error (SWAP)
+Time: 132 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+Error: cpu bus selection error (alu output) or alu operation error (NOT)
+Time: 152 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+Error: cpu bus selection error (alu output) or alu operation error (RL)
+Time: 172 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+Error: carry flag not set on alu operation (RL)
+Time: 172 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+Error: cpu bus selection error (alu output) or alu operation error (RL)
+Time: 192 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+SUCCESS: alu CMP operation
+SUCCESS: alu CMP operation
+Error: cpu bus selection error (alu output) or alu operation error (SUB)
+Time: 282 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+SUCCESS: move R4 -> R3
+Note: Simulation ended.
+Time: 302 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd

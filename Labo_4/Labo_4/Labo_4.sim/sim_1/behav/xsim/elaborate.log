@@ -1,0 +1,23 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.processor_pkg
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [basic_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [\basic_register(c_data_width=5)\]
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [data_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path_tb
+Built simulation snapshot data_path_tb_behav

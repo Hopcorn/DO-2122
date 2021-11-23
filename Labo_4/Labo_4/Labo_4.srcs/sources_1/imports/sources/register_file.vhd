@@ -42,13 +42,12 @@ end register_file;
 
 architecture Behavioral of register_file is
     -- TODO: declare what will be used
-    type register_array is array(0 to C_NR_REGS) of std_logic_vector(C_DATA_WIDTH-1 downto 0);
+    type register_array is array(0 to C_NR_REGS-1) of std_logic_vector(C_DATA_WIDTH-1 downto 0);
     -- signal types
     signal data_outputs: register_array;
-    signal mux_outputs: std_logic_vector(C_NR_REGS-1 downto 0):=(others => '0');
-    signal or_outputs: std_logic_vector(C_NR_REGS-1 downto 0):=(others => '0');
-    -- signals
-    signal output: std_logic_vector(C_DATA_WIDTH-1 downto 0):=(others => '0');
+    signal mux_outputs: register_array;
+    signal or_outputs: register_array;
+    signal zero_vector: std_logic_vector(C_DATA_WIDTH-1 downto 0):=(others => '0');
 
     -- components
     component basic_register is
@@ -66,26 +65,26 @@ architecture Behavioral of register_file is
 begin
     -- TODO: describe how it's all connected and how it behaves
     GEN_REG:
-    for I in 0 to register_array'range-1 generate
+    for I in 0 to C_NR_REGS-1 generate
         single_register: basic_register port map (clk => clk,
                                                   reset => reset, 
-                                                  le => in_sel(I), 
+                                                  le => in_sel(I) and le, 
                                                   data_in => data_in, 
                                                   data_out => data_outputs(I));
    end generate GEN_REG;
    
-   OUT_INIT: process is
-    begin
-        ADD_D_OUT:
-        for i in 0 to register_array'range-1 generate
-            if out_sel(i) = '1' then
-                data_out(i) <= data_outputs(i) or data_outputs(i + 1);
-            else
-                data_output(i) <= (data_out(i)'range=>'0') or data_out(i + 1);
-            end if;
-        end generate;
-    end process;
+    ADD_MUX:
+    for i in 0 to C_NR_REGS-1 generate
+        mux_outputs(i) <= data_outputs(i) when out_sel(i) = '1' else zero_vector;
+    end generate;
+    
+    ADD_OR:
+    for i in 0 to C_NR_REGS-2 generate
+        or_outputs(i) <= mux_outputs(i) or or_outputs(i + 1);
+    end generate;
+    
+    or_outputs(C_NR_REGS-1) <= mux_outputs(C_NR_REGS-1);
    
-   data_out <= output;
+    data_out <= or_outputs(0);
    
 end Behavioral;

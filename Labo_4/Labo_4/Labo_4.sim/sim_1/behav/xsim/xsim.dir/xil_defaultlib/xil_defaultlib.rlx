@@ -1,0 +1,13 @@
+0.7
+2020.2
+Jun 10 2021
+19:45:28
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd,1637662875,vhdl,,,,data_path_tb,,,,,,,,
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd,1637662875,vhdl,,,,register_file_tb,,,,,,,,
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd,1637662875,vhdl,,,,add,,,,,,,,
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd,1637662875,vhdl,,,,alu8bit,,,,,,,,
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd,1637662875,vhdl,,,,fa1b,,,,,,,,
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd,1637662875,vhdl,/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd,,,processor_pkg,,,,,,,,
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd,1637675706,vhdl,,,,data_path,,,,,,,,
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/basic_register.vhd,1637662875,vhdl,,,,basic_register,,,,,,,,
+/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd,1637671437,vhdl,,,,register_file,,,,,,,,

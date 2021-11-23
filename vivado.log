@@ -227,3 +227,1166 @@ update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse /home/student/DO-2122/LDD/LDD1/L4_DataPath/sources/register_file_tb.vhd
+update_compile_order -fileset sim_1
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sim_1
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/basic_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'basic_register'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:71]
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:80]
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:85]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:43]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/basic_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'basic_register'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:72]
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:81]
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:86]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:43]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/basic_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'basic_register'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:72]
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:81]
+ERROR: [VRFC 10-355] attribute range is illegal in an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:86]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:43]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/basic_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'basic_register'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file_tb'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [basic_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [\register_file(c_nr_regs=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.register_file_tb
+Built simulation snapshot register_file_tb_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xsim.dir/register_file_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xsim.dir/register_file_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 23 13:24:18 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 23 13:24:18 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 8067.133 ; gain = 0.000 ; free physical = 8492 ; free virtual = 13583
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_file_tb_behav -key {Behavioral:sim_1:Functional:register_file_tb} -tclbatch {register_file_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source register_file_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: write register 0.
+SUCCESS: write register 1.
+Error: Write/read failed (in_sel=out_sel=0100)
+Time: 50 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Write/read failed (in_sel=out_sel=1000)
+Time: 60 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: read register 0.
+SUCCESS: read register 1.
+Error: Read failed (out_sel=0100)
+Time: 82 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Read failed (out_sel=1000)
+Time: 92 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: reset.
+Note: Simulation ended.
+Time: 110 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_file_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 8128.961 ; gain = 61.828 ; free physical = 8420 ; free virtual = 13521
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [basic_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [\register_file(c_nr_regs=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.register_file_tb
+Built simulation snapshot register_file_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_file_tb_behav -key {Behavioral:sim_1:Functional:register_file_tb} -tclbatch {register_file_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source register_file_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: write register 0.
+SUCCESS: write register 1.
+Error: Write/read failed (in_sel=out_sel=0100)
+Time: 50 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Write/read failed (in_sel=out_sel=1000)
+Time: 60 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: read register 0.
+SUCCESS: read register 1.
+Error: Read failed (out_sel=0100)
+Time: 82 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Read failed (out_sel=1000)
+Time: 92 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: reset.
+Note: Simulation ended.
+Time: 110 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_file_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+WARNING: [VRFC 10-3093] actual for formal port 'le' is neither a static name nor a globally static expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:74]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [basic_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [\register_file(c_nr_regs=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.register_file_tb
+Built simulation snapshot register_file_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+SUCCESS: write register 0.
+SUCCESS: write register 1.
+Error: Write/read failed (in_sel=out_sel=0100)
+Time: 50 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Write/read failed (in_sel=out_sel=1000)
+Time: 60 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: read register 0.
+SUCCESS: read register 1.
+Error: Read failed (out_sel=0100)
+Time: 82 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Read failed (out_sel=1000)
+Time: 92 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: reset.
+Note: Simulation ended.
+Time: 110 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+WARNING: [VRFC 10-3093] actual for formal port 'le' is neither a static name nor a globally static expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:71]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [basic_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [\register_file(c_nr_regs=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.register_file_tb
+Built simulation snapshot register_file_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+SUCCESS: write register 0.
+SUCCESS: write register 1.
+Error: Write/read failed (in_sel=out_sel=0100)
+Time: 50 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Write/read failed (in_sel=out_sel=1000)
+Time: 60 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: read register 0.
+SUCCESS: read register 1.
+Error: Read failed (out_sel=0100)
+Time: 82 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Read failed (out_sel=1000)
+Time: 92 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: reset.
+Note: Simulation ended.
+Time: 110 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+WARNING: [VRFC 10-3093] actual for formal port 'le' is neither a static name nor a globally static expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:71]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [basic_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [\register_file(c_nr_regs=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.register_file_tb
+Built simulation snapshot register_file_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+SUCCESS: write register 0.
+SUCCESS: write register 1.
+Error: Write/read failed (in_sel=out_sel=0100)
+Time: 50 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Write/read failed (in_sel=out_sel=1000)
+Time: 60 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: read register 0.
+SUCCESS: read register 1.
+Error: Read failed (out_sel=0100)
+Time: 82 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Read failed (out_sel=1000)
+Time: 92 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: reset.
+Note: Simulation ended.
+Time: 110 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8214.992 ; gain = 0.000 ; free physical = 8394 ; free virtual = 13500
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+SUCCESS: write register 0.
+SUCCESS: write register 1.
+Error: Write/read failed (in_sel=out_sel=0100)
+Time: 50 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Write/read failed (in_sel=out_sel=1000)
+Time: 60 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: read register 0.
+SUCCESS: read register 1.
+Error: Read failed (out_sel=0100)
+Time: 82 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+Error: Read failed (out_sel=1000)
+Time: 92 ns  Iteration: 0  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+SUCCESS: reset.
+Note: Simulation ended.
+Time: 110 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_file_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj register_file_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+WARNING: [VRFC 10-3093] actual for formal port 'le' is neither a static name nor a globally static expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/sources/register_file.vhd:71]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'register_file_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot register_file_tb_behav xil_defaultlib.register_file_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [basic_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [\register_file(c_nr_regs=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.register_file_tb
+Built simulation snapshot register_file_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+SUCCESS: write register 0.
+SUCCESS: write register 1.
+SUCCESS: write register 2.
+SUCCESS: write register 3.
+SUCCESS: read register 0.
+SUCCESS: read register 1.
+SUCCESS: read register 2.
+SUCCESS: read register 3.
+SUCCESS: reset.
+Note: Simulation ended.
+Time: 110 ns  Iteration: 1  Process: /register_file_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd
+import_files -norecurse {/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/processor_pkg.vhd /home/student/DO-2122/LDD/LDD1/L4_DataPath/sources/data_path.vhd /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd}
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+import_files -fileset sim_1 -norecurse /home/student/DO-2122/LDD/LDD1/L4_DataPath/sources/data_path_tb.vhd
+update_compile_order -fileset sim_1
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top data_path_tb [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+ERROR: [VRFC 10-3202] cannot read from 'out' object 'cpu_bus' ; use 'buffer' or 'inout' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:168]
+ERROR: [VRFC 10-8350] formal port 'data_in' of mode 'in' cannot be associated with actual port 'cpu_bus' of mode 'out' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:168]
+ERROR: [VRFC 10-3031] 'cpu_bus' with mode 'out' cannot be read [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:168]
+ERROR: [VRFC 10-3202] cannot read from 'out' object 'cpu_bus' ; use 'buffer' or 'inout' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:175]
+ERROR: [VRFC 10-8350] formal port 'data_in' of mode 'in' cannot be associated with actual port 'cpu_bus' of mode 'out' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:175]
+ERROR: [VRFC 10-3031] 'cpu_bus' with mode 'out' cannot be read [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:175]
+ERROR: [VRFC 10-3202] cannot read from 'out' object 'cpu_bus' ; use 'buffer' or 'inout' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-8350] formal port 'x' of mode 'in' cannot be associated with actual port 'cpu_bus' of mode 'out' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-3031] 'cpu_bus' with mode 'out' cannot be read [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-3095] actual of formal out port 'data_out' cannot be an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:224]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:59]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+ERROR: [VRFC 10-3202] cannot read from 'out' object 'cpu_bus' ; use 'buffer' or 'inout' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:168]
+ERROR: [VRFC 10-8350] formal port 'data_in' of mode 'in' cannot be associated with actual port 'cpu_bus' of mode 'out' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:168]
+ERROR: [VRFC 10-3031] 'cpu_bus' with mode 'out' cannot be read [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:168]
+ERROR: [VRFC 10-3202] cannot read from 'out' object 'cpu_bus' ; use 'buffer' or 'inout' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:175]
+ERROR: [VRFC 10-8350] formal port 'data_in' of mode 'in' cannot be associated with actual port 'cpu_bus' of mode 'out' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:175]
+ERROR: [VRFC 10-3031] 'cpu_bus' with mode 'out' cannot be read [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:175]
+ERROR: [VRFC 10-3202] cannot read from 'out' object 'cpu_bus' ; use 'buffer' or 'inout' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-8350] formal port 'x' of mode 'in' cannot be associated with actual port 'cpu_bus' of mode 'out' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-3031] 'cpu_bus' with mode 'out' cannot be read [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-3095] actual of formal out port 'data_out' cannot be an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:224]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:59]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+ERROR: [VRFC 10-3202] cannot read from 'out' object 'cpu_bus' ; use 'buffer' or 'inout' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-8350] formal port 'x' of mode 'in' cannot be associated with actual port 'cpu_bus' of mode 'out' [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-3031] 'cpu_bus' with mode 'out' cannot be read [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [VRFC 10-3095] actual of formal out port 'data_out' cannot be an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:224]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:59]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+ERROR: [VRFC 10-3095] actual of formal out port 'data_out' cannot be an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:225]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:59]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+ERROR: [VRFC 10-3095] actual of formal out port 'data_out' cannot be an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:225]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:59]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+ERROR: [VRFC 10-3095] actual of formal out port 'data_out' cannot be an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:226]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:59]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+ERROR: [VRFC 10-3095] actual of formal out port 'data_out' cannot be an expression [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:226]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:59]
+INFO: [VRFC 10-3070] VHDL file '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/ALU8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/FA1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FA1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L2_ALU/sources/processor_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path_tb'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:158]
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:159]
+ERROR: [VRFC 10-1391] statement might not cover all choices ; 'others' clause recommended [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:158]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit data_path_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:158]
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:159]
+ERROR: [VRFC 10-1391] statement might not cover all choices ; 'others' clause recommended [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:158]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit data_path_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:158]
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:159]
+ERROR: [VRFC 10-1391] statement might not cover all choices ; 'others' clause recommended [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:158]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit data_path_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:158]
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:159]
+ERROR: [VRFC 10-1391] statement might not cover all choices ; 'others' clause recommended [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:158]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit data_path_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:159]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit data_path_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 5 elements ; formal 'data_in' expects 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:185]
+ERROR: [VRFC 10-3311] expression has 5 elements ; formal 'data_out' expects 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit data_path_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 5 elements ; formal 'data_in' expects 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:185]
+ERROR: [VRFC 10-3311] expression has 5 elements ; formal 'data_out' expects 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit data_path_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 5 elements ; formal 'data_in' expects 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:185]
+ERROR: [VRFC 10-3311] expression has 5 elements ; formal 'data_out' expects 8 [/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd:186]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit data_path_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'data_path_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_path_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj data_path_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 82f1a03f0da045649e4b9a65d25dfbc2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot data_path_tb_behav xil_defaultlib.data_path_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.processor_pkg
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [basic_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.basic_register [\basic_register(c_data_width=5)\]
+Compiling architecture ldd1 of entity xil_defaultlib.FA1B [fa1b_default]
+Compiling architecture ldd1 of entity xil_defaultlib.ADD [\ADD(c_data_width=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU8bit [alu8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [data_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path_tb
+Built simulation snapshot data_path_tb_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xsim.dir/data_path_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim/xsim.dir/data_path_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 23 14:55:18 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 23 14:55:18 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 8725.449 ; gain = 0.000 ; free physical = 8268 ; free virtual = 13398
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/student/DO-2122/Labo_4/Labo_4/Labo_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "data_path_tb_behav -key {Behavioral:sim_1:Functional:data_path_tb} -tclbatch {data_path_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source data_path_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+SUCCESS: cpu bus selection (dibr)
+SUCCESS: cpu bus selection (register 0)
+SUCCESS: cpu bus selection (pc)
+SUCCESS: cpu bus selection (register 2)
+SUCCESS: cpu bus selection (sp)
+SUCCESS: cpu bus selection (register 4)
+SUCCESS: cpu bus selection (ir_l)
+SUCCESS: cpu bus selection (register 6)
+SUCCESS: cpu bus selection (iv)
+SUCCESS: cpu bus selection (register 7)
+Error: cpu bus selection error (alu output) or alu operation error (SWAP)
+Time: 132 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+Error: cpu bus selection error (alu output) or alu operation error (NOT)
+Time: 152 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+Error: cpu bus selection error (alu output) or alu operation error (RL)
+Time: 172 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+Error: carry flag not set on alu operation (RL)
+Time: 172 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+Error: cpu bus selection error (alu output) or alu operation error (RL)
+Time: 192 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+SUCCESS: alu CMP operation
+SUCCESS: alu CMP operation
+Error: cpu bus selection error (alu output) or alu operation error (SUB)
+Time: 282 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+SUCCESS: move R4 -> R3
+Note: Simulation ended.
+Time: 302 ns  Iteration: 0  Process: /data_path_tb/STIM_PROC  File: /home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/data_path_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'data_path_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 8773.273 ; gain = 47.824 ; free physical = 8252 ; free virtual = 13383
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

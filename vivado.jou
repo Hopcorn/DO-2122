@@ -20,3 +20,50 @@ update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse /home/student/DO-2122/LDD/LDD1/L4_DataPath/sources/register_file_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source register_file_tb.tcl
+close_sim
+launch_simulation
+source register_file_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+import_files -norecurse {/home/student/DO-2122/LDD/LDD1/L2_ALU/sources/processor_pkg.vhd /home/student/DO-2122/LDD/LDD1/L4_DataPath/sources/data_path.vhd /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ADD.vhd /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/FA1B.vhd /home/student/DO-2122/LDD/LDD1/L2_ALU/sources/ALU8bit.vhd}
+update_compile_order -fileset sources_1
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse /home/student/DO-2122/LDD/LDD1/L4_DataPath/sources/data_path_tb.vhd
+update_compile_order -fileset sim_1
+set_property top data_path_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source data_path_tb.tcl
+close_sim

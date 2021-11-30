@@ -174,7 +174,7 @@ begin
     ALU_Z: basic_register generic map(C_DATA_WIDTH => C_DATA_WIDTH) port map (clk => clk,
                                     reset => reset, 
                                     le => z_le_i, 
-                                    data_in => cpu_bus_i, 
+                                    data_in => alu_out_i, 
                                     data_out => z_i);
     
     -- ALU flags register
@@ -185,7 +185,8 @@ begin
                                         data_out => flags_i);
     
     -- ALU
-    alu: ALU8bit generic map(C_DATA_WIDTH => C_DATA_WIDTH) port map ( X => cpu_bus_i,
+    alu: ALU8bit generic map(C_DATA_WIDTH => C_DATA_WIDTH) port map ( 
+                            X => cpu_bus_i,
                             Y => y_i,
                             Z => alu_out_i,
                             op => alu_op_i,

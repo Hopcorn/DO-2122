@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sources_1/imports/LDD1/L4_DataPath/sources/data_path.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'data_path'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Hopcorn/DigitaalOntwerp/DO-2122/Labo_4/Labo_4/Labo_4.srcs/sim_1/imports/sources/register_file_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file_tb'

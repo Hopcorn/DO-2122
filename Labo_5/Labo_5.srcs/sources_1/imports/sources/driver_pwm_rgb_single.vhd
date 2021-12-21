@@ -48,40 +48,38 @@ architecture Behavioral of driver_pwm_rgb_single is
     signal pulse_count_i : std_logic := '0';
     signal rgb_count_i : std_logic_vector(7 downto 0) := (others=>'0');
     signal count: integer:=0;
-    signal rgb_output: std_logic_vector(2 downto 0) := (others=>'0');
 
 begin
 
     -- TODO: write process to generate a count pulse
-    COUNT_PULSE: process(clk)
+    COUNT_PULSE: process(clk, reset)
     begin
-        if(rising_edge(clk)) then
-            count <= count + 1;
-        end if;
-        if(count = C_F_COUNT) then
-            pulse_count_i <= '1';
+        if reset = '1' then
+            count <= 0;
+        elsif(rising_edge(clk)) then
+            if(count = C_REFRESH_COUNT_MAX) then
+                pulse_count_i <= '1';
+                count <= 0;
+            else
+                pulse_count_i <= '0';
+                count <= count + 1;
+            end if;
         end if;
     end process;
     
     -- TODO: write a process to increase rgb_count_i on every count pulse
     RGB_COUNT: process(clk)
     begin
-        if(pulse_count_i = '1') then
-            if(rgb_count_i = "11111111") then 
-                rgb_count_i <= "00000000";
-            else
-                rgb_count_i <= std_logic_vector( unsigned(rgb_count_i) + "1");
-                pulse_count_i <= '0';
-            end if;
+        if reset = '1' then
+            rgb_count_i <= (others=>'0');
+        elsif(rising_edge(clk)) then
+            rgb_count_i <= rgb_count_i + '1';
         end if;
     end process; 
     
     -- TODO: generate pwm output signals based on rgb_count_i and regR/G/B inputs (no process!)
-    rgb_output(C_BIT_RED) <= '1' when regR > rgb_count_i else '0';
-    rgb_output(C_BIT_GREEN) <= '1' when regG > rgb_count_i else '0';
-    rgb_output(C_BIT_BLUE) <= '1' when regB > rgb_count_i else '0';
-    
-    rgb <= rgb_output;
-                              
+    rgb(C_BIT_RED) <= '0' when regR < rgb_count_i else '1';
+    rgb(C_BIT_GREEN) <= '0' when regG < rgb_count_i else '1';
+    rgb(C_BIT_BLUE) <= '0' when regB < rgb_count_i else '1';                      
     
 end Behavioral;

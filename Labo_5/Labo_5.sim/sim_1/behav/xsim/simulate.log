@@ -5,3 +5,16 @@ Testing start-up value...
 TEST PASSED
 Setting R to < 1% , G to ~50% , B to 100%
 Waiting until red goes LOW
+Waiting until red goes HIGH
+Test at >1% ... 
+Warning: Expected RGB = 110
+Time: 13170 ns  Iteration: 0  Process: /driver_pwm_rgb_single_tb/STIM_PROC  File: /home/student/DO-2122/Labo_5/Labo_5.srcs/sim_1/imports/sources/driver_pwm_rgb_single_tb.vhd
+Test at >50% ... 
+TEST PASSED
+Test at <100% ... 
+TEST PASSED
+Test at <1% (new period)... 
+Warning: Expected RGB = 111
+Time: 1033130 ns  Iteration: 0  Process: /driver_pwm_rgb_single_tb/STIM_PROC  File: /home/student/DO-2122/Labo_5/Labo_5.srcs/sim_1/imports/sources/driver_pwm_rgb_single_tb.vhd
+Note: SIMULATION ENDED
+Time: 1033130 ns  Iteration: 0  Process: /driver_pwm_rgb_single_tb/STIM_PROC  File: /home/student/DO-2122/Labo_5/Labo_5.srcs/sim_1/imports/sources/driver_pwm_rgb_single_tb.vhd

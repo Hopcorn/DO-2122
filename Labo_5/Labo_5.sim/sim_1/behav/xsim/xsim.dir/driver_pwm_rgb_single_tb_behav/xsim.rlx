@@ -1,0 +1,12 @@
+
+{ 
+    crc :  7808302447336206753  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 99651388c7cd4639b615f9df571421de --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot driver_pwm_rgb_single_tb_behav xil_defaultlib.driver_pwm_rgb_single_tb" , 
+    buildDate : "Jun 10 2021" , 
+    buildTime : "19:45:28" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/driver_pwm_rgb_single_tb_behav/xsimk\"   \"xsim.dir/driver_pwm_rgb_single_tb_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/driver_pwm_rgb_single_tb_behav/obj/xsim_1.lnx64.o\" -L\"/opt/Xilinx/Vivado/2021.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

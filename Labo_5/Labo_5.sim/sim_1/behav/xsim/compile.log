@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_5/Labo_5.srcs/sources_1/imports/sources/driver_pwm_rgb_single.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driver_pwm_rgb_single'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/student/DO-2122/Labo_5/Labo_5.srcs/sim_1/imports/sources/driver_pwm_rgb_single_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driver_pwm_rgb_single_tb'
